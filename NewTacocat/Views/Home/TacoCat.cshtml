@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>TacoCat</h1>
+<div class="row">
+    <div class="col">
+        <form asp-action="TacoCat">
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="userWord" />
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-dark">Reverse Me</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col h2 text-center">
+        Reverse word will show below
+    </div>
+</div>
+<div class="row">
+    <div class="col text-center h1">
+        @ViewData["Result"]
+    </div>
+</div>
+
